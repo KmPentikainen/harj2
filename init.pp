@@ -32,6 +32,7 @@ Koodi asentaa apachen ja aktivoi userdirit käyttöön jos näin ei vielä ole. 
 
 Otin moduulin käyttöön komennolla: puppet apply -e 'class {apache:}'
 
+Tästä raportista löytyy hieman kattavampi versio myös osoitteesta kape601.wordpress.com
 
 
 class apache {
