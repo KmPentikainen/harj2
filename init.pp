@@ -4,7 +4,7 @@ Kotitehtävänä oli konfiguroida jokin palvelin package-file-service tyyliin ja
 
 Linkki Github repositoryyn: https://github.com/KmPentikainen/harj2
 
-Tein tehtävän kotona pöytäkoneella käyttäen tehtävän tekemiseen Live USB:ta.
+Tein tehtävän kotona pöytäkoneella käyttäen tehtävän tekemiseen Live USB:ta. Versio oli Ubuntu 16.04.1
 
 Lähteinä käytin Tero Karvisen kotisivuja (http://terokarvinen.com/2013/ssh-server-puppet-module-for-ubuntu-12-04) sekä Lauri Soivin kotisivuja (https://soivi.net/2013/installing-apache-and-php-with-puppet-module/)
 
