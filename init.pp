@@ -1,3 +1,39 @@
+# h2
+
+Kotitehtävänä oli konfiguroida jokin palvelin package-file-service tyyliin ja julkaista se sen jälkeen githubissa.
+
+Linkki Github repositoryyn: https://github.com/KmPentikainen/harj2
+
+Tein tehtävän kotona pöytäkoneella käyttäen tehtävän tekemiseen Live USB:ta.
+
+Lähteinä käytin Tero Karvisen kotisivuja (http://terokarvinen.com/2013/ssh-server-puppet-module-for-ubuntu-12-04) sekä Lauri Soivin kotisivuja (https://soivi.net/2013/installing-apache-and-php-with-puppet-module/)
+
+# Aloitus
+
+Aloitetaan päivityksillä:
+
+sudo apt-get update
+
+# Puppetin asennus ja modulin luonti:
+
+Päätin asentaa ja konfiguroida apachen.
+
+sudo apt-get install puppet
+
+Luodaan etc/puppet/modules kansioon tarvittavat kansiot sekä tiedosto johon koodi kirjoitetaan:
+
+mkdir apache
+
+mkdir manifests
+
+nano init.pp
+
+Koodi asentaa apachen ja aktivoi userdirit käyttöön jos näin ei vielä ole. Service varmistaa että apache on käynnissä.
+
+Otin moduulin käyttöön komennolla: puppet apply -e 'class {apache:}'
+
+
+
 class apache {
 	package {"apache2":
 	ensure => "installed" ,
